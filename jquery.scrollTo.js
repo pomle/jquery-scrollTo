@@ -37,8 +37,6 @@
 
 				var settings = $.extend({}, defaultSettings, userOptions);
 
-				console.log(settings, defaultSettings, userOptions);
-
 				var w = $(window);
 				var viewport = {
 					'top': w.scrollTop(),
@@ -59,7 +57,6 @@
 					'width': i.width()
 				};
 
-				console.log(viewport, element);
 
 				if (element.bottom > (viewport.bottom - settings.margin_bottom)) {
 					w.scrollTop(element.top - viewport.height + element.height + settings.margin_bottom);
